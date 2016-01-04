@@ -1,0 +1,2 @@
+# TurboScanner
+IQ Option
