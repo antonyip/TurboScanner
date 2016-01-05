@@ -3,10 +3,10 @@
 #include <WinApi.au3>
 #include "NomadMemory2.au3"
 
-Global $address = 0x011B4DF4;
+Global $address = 0x00C64F74;
 Global $MemoryErrorFile
-Global $SearchString = '\"EURGBP\",\"value\"'
-Global $pid = 0x2580
+Global $SearchString = '\"EURUSD\",\"value\"'
+Global $pid = 0x1564
 
 ;Bit amount nuber
 Global $BidPosX = 938
