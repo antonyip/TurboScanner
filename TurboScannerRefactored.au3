@@ -3,10 +3,10 @@
 #include <WinApi.au3>
 #include "NomadMemory2.au3"
 
-Global $address = 0x00C64F74;
+Global $address = 0x0115205c;
 Global $MemoryErrorFile
 Global $SearchString = '\"EURUSD\",\"value\"'
-Global $pid = 0x1564
+Global $pid = 0x2714
 
 ;Bit amount nuber
 Global $BidPosX = 938
@@ -324,10 +324,11 @@ EndFunc
 Func CalculateBB()
    If ($Counter > $TWOFIFTYSIX) Then
 	  $numbers = $TWOFIFTYSIX
-
+	  $BetReady = true
 	  $sum = 0
 	  $Counter2 = 0
 	  While($Counter2 < $TWOFIFTYSIX)
+
 		 $diff = $Values[$numbers - $Counter2] - $SMA256
 		 $diffSquared = $diff * $diff
 		 $sum += $diffSquared

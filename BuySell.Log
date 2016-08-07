@@ -1,0 +1,30 @@
+put at: 1.077755 @ 1.14 time: 08:22:48
+lost : 1.077755 expire : 1.0779
+put at: 1.07787 @ 2.43 time: 08:28:02
+lost : 1.07787 expire : 1.077895
+put at: 1.07788 @ 5.19 time: 09:05:22
+profit : 1.07788 expire : 1.07782
+call at: 1.07822 @ 1.14 time: 09:16:23
+profit : 1.07822 expire : 1.07848
+call at: 1.078705 @ 1.14 time: 16:00:15
+profit : 1.078705 expire : 1.07886
+put at: 1.07807 @ 1.14 time: 16:06:45
+profit : 1.07807 expire : 1.07805
+put at: 1.07783 @ 1.14 time: 16:09:03
+lost : 1.07783 expire : 1.07792
+call at: 1.078095 @ 2.43 time: 16:15:50
+profit : 1.078095 expire : 1.07813
+call at: 1.07835 @ 1.14 time: 16:17:22
+profit : 1.07835 expire : 1.078485
+put at: 1.07806 @ 1.14 time: 16:18:44
+profit : 1.07806 expire : 1.077595
+call at: 1.07815 @ 1.14 time: 16:37:49
+lost : 1.07815 expire : 1.078085
+put at: 1.07768 @ 2.43 time: 16:40:00
+lost : 1.07768 expire : 1.0777
+call at: 1.078115 @ 5.19 time: 16:45:14
+lost : 1.078115 expire : 1.078075
+call at: 1.078395 @ 11.08 time: 16:47:49
+profit : 1.078395 expire : 1.078465
+call at: 1.07934 @ 1.14 time: 16:51:41
+lost : 1.07934 expire : 1.07897
