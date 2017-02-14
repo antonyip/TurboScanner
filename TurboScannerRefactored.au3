@@ -3,26 +3,26 @@
 #include <WinApi.au3>
 #include "NomadMemory2.au3"
 
-Global $address = 0x0115205c;
+Global $address = 0x052676EC;
 Global $MemoryErrorFile
-Global $SearchString = '\"EURUSD\",\"value\"'
-Global $pid = 0x2714
+Global $SearchString = 'EURUSD\",\"bid\"'
+Global $pid = 0x3B68
 
 ;Bit amount nuber
-Global $BidPosX = 938
-Global $BidPosY = 254
+Global $BidPosX = -1409
+Global $BidPosY = 360
 
 ;Call Button
-Global $CallPosX = 917
-Global $CallPosY = 396
+Global $CallPosX = -1396
+Global $CallPosY = 582
 
 ;Put Button
-Global $PutPosX = 917
-Global $PutPosY = 470
+Global $PutPosX = -1388
+Global $PutPosY = 728
 
 ;To Actually Click Call and Put Buttons
-Global $RealMoneyMode = false
-Global $TakeInput = false
+Global $RealMoneyMode = true
+Global $TakeInput = true
 
 Global $Values[60*60*24*7]
 Global $MinValues[60*60*24*7]
@@ -530,11 +530,11 @@ EndFunc
 Func ExtractValue($memoryStrip)
    Local $theString = StringSplit($memoryStrip,":")
    If ($theString[0] > 5) Then
-	  If StringCompare($theString[3],$SearchString) == 0 Then
-		 Return StringSplit($theString[4],",")[1]
-	  Else
-		 ConsoleWrite($theString[4])
-	  EndIf
+;~ 	  If StringCompare($theString[0],$SearchString) == 0  Then
+		 Return StringSplit($theString[3],',')[1]
+;~ 	  Else
+;~ 		 ConsoleWrite(StringSplit($theString[3],',')[1])
+;~ 	  EndIf
    EndIf
    Return 0
 EndFunc
